@@ -17,7 +17,8 @@
 
 	<%
 		boolean showComment = false;
-		Object comment = request.getParameter("document");
+		Object comment = request.getAttribute("document");
+		
 		if (null != comment) {
 	%>
 

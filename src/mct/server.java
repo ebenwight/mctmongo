@@ -44,7 +44,7 @@ public class server extends HttpServlet {
 		String comment = null;
 
 		
-		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/index.jsp");
 		rd.forward(request, response);
 
 	}
@@ -88,7 +88,7 @@ public class server extends HttpServlet {
 		request.setAttribute("document", result.toString());
 		response.setHeader("document", result.toString());
 		//response.sendRedirect("/mctmongo/index.jsp");
-		request.getRequestDispatcher("/mctmongo/index.jsp").forward(request, response);
+		request.getRequestDispatcher("index.jsp").forward(request, response);
 
 		//rd.forward(request, response);
 
